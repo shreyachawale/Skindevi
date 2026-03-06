@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900 font-sans;
+    color: #222;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  p {
+    color: #222;
+    line-height: 1.7;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .text-pink-600 {
+    color: #D97C96;
+  }
+
+  .text-pink-700 {
+    color: #D97C96;
+  }
+
+  .bg-pink-600 {
+    background-color: #D97C96;
+  }
+
+  .bg-pink-700 {
+    background-color: #D97C96;
+  }
+
+  .bg-pink-50 {
+    background-color: #FCF5F7;
+  }
+
+  .bg-pink-100 {
+    background-color: #F8E8ED;
+  }
+
+  .border-pink-100 {
+    border-color: #F8E8ED;
+  }
+
+  .border-pink-200 {
+    border-color: #E8A6B6;
+  }
+
+  .hover\:bg-pink-50:hover {
+    background-color: #FCF5F7;
+  }
+
+  .hover\:text-pink-400:hover {
+    color: #E8A6B6;
+  }
+
+  .hover\:text-pink-600:hover {
+    color: #D97C96;
+  }
+
+  .hover\:bg-pink-600:hover {
+    background-color: #D97C96;
+  }
+
+  .from-pink-600 {
+    --tw-gradient-from: #D97C96;
+  }
+
+  .to-pink-700 {
+    --tw-gradient-to: #D97C96;
+  }
+
+  .from-pink-50 {
+    --tw-gradient-from: #FCF5F7;
+  }
+
+  .to-pink-50 {
+    --tw-gradient-to: #FCF5F7;
+  }
+
+  .from-pink-100 {
+    --tw-gradient-from: #F8E8ED;
+  }
+
+  .fill-gold-500 {
+    fill: #C79A3B;
+  }
+
+  .text-gold-500 {
+    color: #C79A3B;
+  }
+}
