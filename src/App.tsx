@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import ProductListing from './pages/ProductListing';
 import SimplePage from './pages/SimplePage';
+import Gifting from './pages/gifting';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
 
           <Route path="/wellness" element={<SimplePage title="Wellness" description="Holistic wellness begins from within. Explore our range of Ayurvedic wellness products." />} />
           <Route path="/discover" element={<SimplePage title="Discover SKINDEVI" description="Learn about our journey, our values, and our commitment to authentic Ayurvedic beauty." />} />
-          <Route path="/gifting" element={<SimplePage title="Gifting" description="Share the gift of Ayurvedic wellness with beautifully curated gift sets." />} />
+          <Route path="/gifting" element={<Gifting />} />
           <Route path="/best-sellers" element={<SimplePage title="Best Sellers" description="Our most beloved formulations, trusted by wellness professionals worldwide." />} />
           <Route path="/contact" element={<SimplePage title="Contact Us" description="Get in touch with us for wholesale inquiries, partnerships, or any questions." />} />
           <Route path="/try-before-buy" element={<SimplePage title="Try Before You Buy" description="Experience our products firsthand with our sample program for wholesale partners." />} />

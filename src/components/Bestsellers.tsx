@@ -1,23 +1,26 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import serumImage from '../data/serum.png';
+import powderFaceWashImage from '../data/powder.png';
+import oilImage from '../data/oil.png';
 
 const Bestsellers = () => {
   const categories = [
     {
       title: 'Serums',
-      image: 'https://images.pexels.com/photos/7755515/pexels-photo-7755515.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: serumImage,
       description: 'Concentrated botanical elixirs for radiant skin',
       link: '/bestsellers/serums'
     },
     {
       title: 'Hair Oils',
-      image: 'https://images.pexels.com/photos/7755404/pexels-photo-7755404.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: oilImage,
       description: 'Nourishing oils for lustrous, healthy hair',
       link: '/bestsellers/hair-oils'
     },
     {
       title: 'Powder Face Wash',
-      image: 'https://images.pexels.com/photos/7755396/pexels-photo-7755396.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: powderFaceWashImage,
       description: 'Traditional cleansing powders for pure, glowing skin',
       link: '/bestsellers/powder-facewash'
     },
