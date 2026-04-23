@@ -44,7 +44,7 @@ const Ubtan = () => {
 
   return (
     <section className="py-24 bg-gradient-to-b from-white to-pink-50 min-h-screen">
-      <div className="max-w-5xl md:px-16 lg:px-24">
+      <div className="w-full px-6 md:px-10 lg:px-16">
 
         {/* Heading */}
         <div className="text-center mb-16">
@@ -57,7 +57,7 @@ const Ubtan = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {ubtans.map((item, index) => (
             <Link
               key={index}
