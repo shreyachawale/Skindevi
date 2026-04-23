@@ -73,32 +73,12 @@ const Navbar = () => {
               onMouseEnter={() => handleMouseEnter('face')}
               onMouseLeave={handleMouseLeave}
             >
-              <button
-                type="button"
+              <Link
+                to="/face"
                 className="flex items-center space-x-1 text-sm text-gray-900 hover:text-pink-600 transition-colors focus:outline-none"
-                aria-haspopup="true"
-                aria-expanded={activeDropdown === 'face'}
-                onClick={() => handleDropdownClick('face')}
               >
                 <span>Face</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              {activeDropdown === 'face' && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50">
-                  <Link
-                    to="/face/category"
-                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-pink-50 hover:text-pink-600 transition-colors"
-                  >
-                    Shop by Category
-                  </Link>
-                  <Link
-                    to="/face/concern"
-                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-pink-50 hover:text-pink-600 transition-colors"
-                  >
-                    Shop by Concern
-                  </Link>
-                </div>
-              )}
+              </Link>
             </div>
 
 
@@ -107,32 +87,12 @@ const Navbar = () => {
               onMouseEnter={() => handleMouseEnter('hair')}
               onMouseLeave={handleMouseLeave}
             >
-              <button
-                type="button"
+              <Link
+                to="/hair"
                 className="flex items-center space-x-1 text-sm text-gray-900 hover:text-pink-600 transition-colors focus:outline-none"
-                aria-haspopup="true"
-                aria-expanded={activeDropdown === 'hair'}
-                onClick={() => handleDropdownClick('hair')}
               >
                 <span>Hair</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              {activeDropdown === 'hair' && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50">
-                  <Link
-                    to="/hair/category"
-                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-pink-50 hover:text-pink-600 transition-colors"
-                  >
-                    Shop by Category
-                  </Link>
-                  <Link
-                    to="/hair/concern"
-                    className="block px-4 py-2 text-sm text-gray-900 hover:bg-pink-50 hover:text-pink-600 transition-colors"
-                  >
-                    Shop by Concern
-                  </Link>
-                </div>
-              )}
+              </Link>
             </div>
 
             

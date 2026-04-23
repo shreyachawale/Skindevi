@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -30,14 +30,21 @@ const Contact = () => {
 
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0">
-                <Phone className="w-6 h-6 text-pink-600" />
+                <Instagram className="w-6 h-6 text-pink-600" />
               </div>
               <div>
                 <h3 className="font-serif text-xl text-gray-900 mb-2">Phone</h3>
-                <p className="text-gray-700">
-                  +91 98765 43210<br />
-                  Mon-Sat, 9:00 AM - 6:00 PM IST
-                </p>
+                {/* <p className="text-gray-700">
+                  DM us at<br />
+                </p> */}
+                <a 
+                  href="https://www.instagram.com/skin.devi?r=nametag"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline cursor-pointer">
+                    DM us at{" "}
+                    <span className="text-pink-500 font-medium">Skindevi</span>
+                </a>
               </div>
             </div>
 
@@ -48,8 +55,9 @@ const Contact = () => {
               <div>
                 <h3 className="font-serif text-xl text-gray-900 mb-2">Email</h3>
                 <p className="text-gray-700">
-                  hello@skindevi.com<br />
-                  wholesale@skindevi.com
+                  <a href="https://mail.google.com/mail/?view=cm&to=Enquiries@skindevi.com" className="hover:underline cursor-pointer">Enquiries@skindevi.com<br /></a>
+                  <a href="https://mail.google.com/mail/?view=cm&to=Info@skindevi.com" className="hover:underline cursor-pointer">Info@skindevi.com<br /></a>
+                  <a href="https://mail.google.com/mail/?view=cm&to=Feedback@skindevi.com" className="hover:underline cursor-pointer">Feedback@skindevi.com</a>
                 </p>
               </div>
             </div>
